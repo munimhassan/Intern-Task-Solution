@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.munim{
+margin-left:500px;
+margin-top:300px;
+}
+h1{
+color:White; font-size:40px; font-style:italic;
+}
+h2{
+color:yellow; font-style:Bold;
+}
+
+</style>
+<script>
+function fahim(){
+var n=document.getElementById("get").value;
+var result=1;
+for(var i=1;i<=n;i++){
+result=result*i;
+document.getElementById("post").innerHTML=result;
+}
+}
+</script>
+</head>
+<body bgcolor="Pink" style="background-image:url('iphone.jpg'); background-size:100%;">
+<div class="munim">
+<h1>Factorial Number</h1>
+<h2>The Factorial Number is : <span id="post"></span></h2>
+<form action="">
+Input Any Number : <input type="text" placeholder="" id="get"/>
+<input type="button" value="Factorial" onclick="fahim();"/><input type="reset" value="Reset"/>
+</form>
+</div>
+</body>
+</html>
